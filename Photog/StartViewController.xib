@@ -14,11 +14,45 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartViewControllerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="NKQ-hF-auO">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartViewControllerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="NKQ-hF-auO">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAv-gW-Ya5">
+                    <rect key="frame" x="10" y="546" width="580" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="7xD-Z2-aAC"/>
+                    </constraints>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSz-si-Pu3">
+                    <rect key="frame" x="10" y="492" width="580" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="4R7-nv-Teh"/>
+                    </constraints>
+                    <state key="normal" title="Sign Up">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NKQ-hF-auO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Cv-cY-1Fc"/>
+                <constraint firstItem="NKQ-hF-auO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0yk-JB-87V"/>
+                <constraint firstItem="FAv-gW-Ya5" firstAttribute="top" secondItem="zSz-si-Pu3" secondAttribute="bottom" constant="10" id="1tV-5Z-z3v"/>
+                <constraint firstAttribute="trailing" secondItem="zSz-si-Pu3" secondAttribute="trailing" constant="10" id="3Ma-Id-PSn"/>
+                <constraint firstAttribute="bottom" secondItem="NKQ-hF-auO" secondAttribute="bottom" id="85g-X9-Or5"/>
+                <constraint firstAttribute="bottom" secondItem="FAv-gW-Ya5" secondAttribute="bottom" constant="10" id="UaG-Is-cNk"/>
+                <constraint firstItem="FAv-gW-Ya5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="ZVc-pj-OoS"/>
+                <constraint firstAttribute="trailing" secondItem="NKQ-hF-auO" secondAttribute="trailing" id="ext-BY-56z"/>
+                <constraint firstItem="zSz-si-Pu3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="gNI-06-bRJ"/>
+                <constraint firstAttribute="trailing" secondItem="FAv-gW-Ya5" secondAttribute="trailing" constant="10" id="wgQ-t6-mgS"/>
+            </constraints>
         </view>
     </objects>
     <resources>
