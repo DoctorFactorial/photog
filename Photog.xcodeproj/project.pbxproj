@@ -8,11 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		4C8A70841B624BB600648141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A70831B624BB600648141 /* AppDelegate.swift */; };
-		4C8A70861B624BB600648141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A70851B624BB600648141 /* ViewController.swift */; };
-		4C8A70891B624BB600648141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A70871B624BB600648141 /* Main.storyboard */; };
 		4C8A708B1B624BB600648141 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A708A1B624BB600648141 /* Images.xcassets */; };
 		4C8A708E1B624BB600648141 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A708C1B624BB600648141 /* LaunchScreen.xib */; };
 		4C8A709A1B624BB700648141 /* PhotogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A70991B624BB700648141 /* PhotogTests.swift */; };
+		4C8A70A51B626A2B00648141 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70A31B626A2B00648141 /* Bolts.framework */; };
+		4C8A70A61B626A2B00648141 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70A41B626A2B00648141 /* Parse.framework */; };
+		4C8A70A81B626A8100648141 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70A71B626A8100648141 /* AudioToolbox.framework */; };
+		4C8A70AA1B626A8600648141 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70A91B626A8600648141 /* CFNetwork.framework */; };
+		4C8A70AC1B626A9000648141 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70AB1B626A9000648141 /* CoreGraphics.framework */; };
+		4C8A70AE1B626A9800648141 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70AD1B626A9800648141 /* CoreLocation.framework */; };
+		4C8A70B01B626AA800648141 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70AF1B626AA800648141 /* QuartzCore.framework */; };
+		4C8A70B21B626AB100648141 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70B11B626AB100648141 /* Security.framework */; };
+		4C8A70B41B626ABA00648141 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70B31B626ABA00648141 /* StoreKit.framework */; };
+		4C8A70B61B626ACB00648141 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70B51B626ACB00648141 /* SystemConfiguration.framework */; };
+		4C8A70B81B626AD800648141 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70B71B626AD700648141 /* libz.dylib */; };
+		4C8A70BA1B626AE700648141 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70B91B626AE700648141 /* libsqlite3.dylib */; };
+		4C91858E1B650BB20086D209 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C91858C1B650BB20086D209 /* StartViewController.swift */; };
+		4C91858F1B650BB20086D209 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C91858D1B650BB20086D209 /* StartViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +41,25 @@
 		4C8A707E1B624BB600648141 /* Photog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8A70821B624BB600648141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C8A70831B624BB600648141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C8A70851B624BB600648141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4C8A70881B624BB600648141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C8A708A1B624BB600648141 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C8A708D1B624BB600648141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4C8A70931B624BB700648141 /* PhotogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8A70981B624BB700648141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C8A70991B624BB700648141 /* PhotogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotogTests.swift; sourceTree = "<group>"; };
+		4C8A70A31B626A2B00648141 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.7.5/Bolts.framework"; sourceTree = "<group>"; };
+		4C8A70A41B626A2B00648141 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1.7.5/Parse.framework"; sourceTree = "<group>"; };
+		4C8A70A71B626A8100648141 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4C8A70A91B626A8600648141 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4C8A70AB1B626A9000648141 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4C8A70AD1B626A9800648141 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4C8A70AF1B626AA800648141 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4C8A70B11B626AB100648141 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4C8A70B31B626ABA00648141 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4C8A70B51B626ACB00648141 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4C8A70B71B626AD700648141 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4C8A70B91B626AE700648141 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4C91858C1B650BB20086D209 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		4C91858D1B650BB20086D209 /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8A70BA1B626AE700648141 /* libsqlite3.dylib in Frameworks */,
+				4C8A70B81B626AD800648141 /* libz.dylib in Frameworks */,
+				4C8A70B61B626ACB00648141 /* SystemConfiguration.framework in Frameworks */,
+				4C8A70B41B626ABA00648141 /* StoreKit.framework in Frameworks */,
+				4C8A70B21B626AB100648141 /* Security.framework in Frameworks */,
+				4C8A70B01B626AA800648141 /* QuartzCore.framework in Frameworks */,
+				4C8A70AE1B626A9800648141 /* CoreLocation.framework in Frameworks */,
+				4C8A70AC1B626A9000648141 /* CoreGraphics.framework in Frameworks */,
+				4C8A70AA1B626A8600648141 /* CFNetwork.framework in Frameworks */,
+				4C8A70A81B626A8100648141 /* AudioToolbox.framework in Frameworks */,
+				4C8A70A51B626A2B00648141 /* Bolts.framework in Frameworks */,
+				4C8A70A61B626A2B00648141 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +95,8 @@
 		4C8A70751B624BB600648141 = {
 			isa = PBXGroup;
 			children = (
+				4C8A70B91B626AE700648141 /* libsqlite3.dylib */,
+				4C8A70B71B626AD700648141 /* libz.dylib */,
 				4C8A70801B624BB600648141 /* Photog */,
 				4C8A70961B624BB700648141 /* PhotogTests */,
 				4C8A707F1B624BB600648141 /* Products */,
@@ -78,10 +116,11 @@
 			isa = PBXGroup;
 			children = (
 				4C8A70831B624BB600648141 /* AppDelegate.swift */,
-				4C8A70851B624BB600648141 /* ViewController.swift */,
-				4C8A70871B624BB600648141 /* Main.storyboard */,
+				4C91858C1B650BB20086D209 /* StartViewController.swift */,
+				4C91858D1B650BB20086D209 /* StartViewController.xib */,
 				4C8A708A1B624BB600648141 /* Images.xcassets */,
 				4C8A708C1B624BB600648141 /* LaunchScreen.xib */,
+				4C91858B1B6505840086D209 /* Frameworks */,
 				4C8A70811B624BB600648141 /* Supporting Files */,
 			);
 			path = Photog;
@@ -110,6 +149,23 @@
 				4C8A70981B624BB700648141 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C91858B1B6505840086D209 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C8A70B51B626ACB00648141 /* SystemConfiguration.framework */,
+				4C8A70B31B626ABA00648141 /* StoreKit.framework */,
+				4C8A70B11B626AB100648141 /* Security.framework */,
+				4C8A70AF1B626AA800648141 /* QuartzCore.framework */,
+				4C8A70AD1B626A9800648141 /* CoreLocation.framework */,
+				4C8A70AB1B626A9000648141 /* CoreGraphics.framework */,
+				4C8A70A91B626A8600648141 /* CFNetwork.framework */,
+				4C8A70A71B626A8100648141 /* AudioToolbox.framework */,
+				4C8A70A31B626A2B00648141 /* Bolts.framework */,
+				4C8A70A41B626A2B00648141 /* Parse.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +248,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C8A70891B624BB600648141 /* Main.storyboard in Resources */,
 				4C8A708E1B624BB600648141 /* LaunchScreen.xib in Resources */,
 				4C8A708B1B624BB600648141 /* Images.xcassets in Resources */,
+				4C91858F1B650BB20086D209 /* StartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C8A70861B624BB600648141 /* ViewController.swift in Sources */,
 				4C8A70841B624BB600648141 /* AppDelegate.swift in Sources */,
+				4C91858E1B650BB20086D209 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +292,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4C8A70871B624BB600648141 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C8A70881B624BB600648141 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4C8A708C1B624BB600648141 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -340,6 +388,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Michael/Downloads/parse-library-1.7.5",
+				);
 				INFOPLIST_FILE = Photog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +402,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Michael/Downloads/parse-library-1.7.5",
+				);
 				INFOPLIST_FILE = Photog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +465,7 @@
 				4C8A709F1B624BB700648141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C8A70A01B624BB700648141 /* Build configuration list for PBXNativeTarget "PhotogTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +474,7 @@
 				4C8A70A21B624BB700648141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -5,7 +5,8 @@
 //  Created by Michael Gordon on 24/07/2015.
 //  Copyright (c) 2015 Personal. All rights reserved.
 //
-
+import Parse
+import Bolts
 import UIKit
 
 @UIApplicationMain
@@ -15,8 +16,58 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+        self.setupParse()
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        var navigationController = UINavigationController()
+        var startViewController = StartViewController(nibName: "StartViewController", bundle: nil)
+        startViewController.view.backgroundColor = UIColor.yellowColor()
+        
+        // If there's a logged in user, then present the main UI
+        
+        if PFUser.currentUser() == nil
+        {
+            navigationController.viewControllers = [startViewController]
+        }
+        else
+        {
+            // TODO: Present UI for loggin in or creating an account
+            println("we have a user!")
+        }
+        
+        var viewController = UIViewController()
+        viewController.view.backgroundColor = UIColor.magentaColor()
+        
+        self.window!.rootViewController = navigationController
+        self.window!.makeKeyAndVisible()
+        
         // Override point for customization after application launch.
+        
+        // If there's a logged in user, present the main UI
+        
+        // Else present the UI for logging in or creating an account
         return true
+    }
+    
+    func setupParse() {
+        // [Optional] Power your app with Local Datastore. For more info, go to
+        // https://parse.com/docs/ios_guide#localdatastore/iOS
+        // Parse.enableLocalDatastore()
+        
+        // Initialize Parse.
+        Parse.setApplicationId("lHyB6qNqAHh7vTiV3VTCCv07jmFXLCDm6U71ZqNE",
+            clientKey: "xzh3hZZPJtaZlzbWKOR3OW4NNC2zEJQsIKrY5alG")
+        
+        // [Optional] Track statistics around application opens.
+        // PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+//        let testObject = PFObject(className: "TestObject")
+//        testObject["foo"] = "bar"
+//        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+//            println("Object has been saved.")
+//        }
     }
 
     func applicationWillResignActive(application: UIApplication) {
