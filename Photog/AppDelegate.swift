@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         var navigationController = UINavigationController()
         var startViewController = StartViewController(nibName: "StartViewController", bundle: nil)
-        startViewController.view.backgroundColor = UIColor.yellowColor()
         
         // If there's a logged in user, then present the main UI
         
