@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         self.setupParse()
+        self.setupAppAppearance()
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
@@ -67,6 +68,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
 //            println("Object has been saved.")
 //        }
+    }
+    
+    func setupAppAppearance()
+    {
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        UINavigationBar.appearance().barTintColor = UIColor.blackColor()
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        UITabBar.appearance().barTintColor = UIColor.blackColor()
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
+        UITabBar.appearance().selectionIndicatorImage = UIImage(named: "SelectedTabBackground")
     }
 
     func applicationWillResignActive(application: UIApplication) {
