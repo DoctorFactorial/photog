@@ -82,11 +82,25 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         if (email?.isEmpty == true || password?.isEmpty == true  || email?.isEmailAddress() == false) // is this an email address
         {
             // alert the user
+            let actionSheetController: UIAlertController = UIAlertController(title: "Login failed", message: "Quick, try again!", preferredStyle: .ActionSheet)
+            
+            //Create and add the OK action
+            let okAction: UIAlertAction = UIAlertAction(title: "OK", style: .Default) { action -> Void in
+                //Just dismiss the action sheet
+            }
+            actionSheetController.addAction(okAction)
+            
+          
+            //Present the AlertController
+            self.presentViewController(actionSheetController, animated: true, completion: nil)
+            
+            
             println("no good!")
             return
         }
             // otherwise, authenticate
     }
 
-
 }
+
+
