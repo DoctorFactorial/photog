@@ -23,12 +23,14 @@ class StartViewController: UIViewController {
     
     @IBAction func didTapSignIn(sender: AnyObject)
     {
-        println("sign in!")
+        var viewController = AuthViewController(nibName: "AuthViewController", bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func didTapSignUp(sender: AnyObject)
     {
-        println("sign up!")
+        var viewController = AuthViewController(nibName: "AuthViewController", bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 
 }
