@@ -25,6 +25,7 @@
 		4C8A70B61B626ACB00648141 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70B51B626ACB00648141 /* SystemConfiguration.framework */; };
 		4C8A70B81B626AD800648141 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70B71B626AD700648141 /* libz.dylib */; };
 		4C8A70BA1B626AE700648141 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A70B91B626AE700648141 /* libsqlite3.dylib */; };
+		4C8C9D501B679C9D0098F1B0 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C9D4F1B679C9D0098F1B0 /* String+Extensions.swift */; };
 		4C91858E1B650BB20086D209 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C91858C1B650BB20086D209 /* StartViewController.swift */; };
 		4C91858F1B650BB20086D209 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C91858D1B650BB20086D209 /* StartViewController.xib */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		4C8A70B51B626ACB00648141 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4C8A70B71B626AD700648141 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4C8A70B91B626AE700648141 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4C8C9D4F1B679C9D0098F1B0 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		4C91858C1B650BB20086D209 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		4C91858D1B650BB20086D209 /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +134,7 @@
 			children = (
 				4C8A70831B624BB600648141 /* AppDelegate.swift */,
 				4C09AB9D1B676D72009B8C7C /* ViewControllers */,
+				4C8C9D4E1B6799040098F1B0 /* Extensions */,
 				4C8A708A1B624BB600648141 /* Images.xcassets */,
 				4C8A708C1B624BB600648141 /* LaunchScreen.xib */,
 				4C91858B1B6505840086D209 /* Frameworks */,
@@ -163,6 +166,14 @@
 				4C8A70981B624BB700648141 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C8C9D4E1B6799040098F1B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C8C9D4F1B679C9D0098F1B0 /* String+Extensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		4C91858B1B6505840086D209 /* Frameworks */ = {
@@ -283,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8C9D501B679C9D0098F1B0 /* String+Extensions.swift in Sources */,
 				4C8A70841B624BB600648141 /* AppDelegate.swift in Sources */,
 				4C09AB9B1B676D50009B8C7C /* AuthViewController.swift in Sources */,
 				4C91858E1B650BB20086D209 /* StartViewController.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AuthViewController: UIViewController {
+class AuthViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var emailTextField: UITextField?
     @IBOutlet var passwordTextField: UITextField?
@@ -58,7 +58,35 @@ class AuthViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        if (textField == self.emailTextField)
+        {
+            self.emailTextField?.resignFirstResponder()
+            self.passwordTextField?.becomeFirstResponder()
+        }
+        else if (textField == self.passwordTextField)
+        {
+            self.passwordTextField?.resignFirstResponder()
+            self.authenticate()
+        }
+        
+        return true
+    }
+    
+    func authenticate()
+    {
+        var email = self.emailTextField?.text
+        var password = self.passwordTextField?.text
+        
+        if (email?.isEmpty == true || password?.isEmpty == true  || email?.isEmailAddress() == false) // is this an email address
+        {
+            // alert the user
+            println("no good!")
+            return
+        }
+            // otherwise, authenticate
+    }
 
 
 }
