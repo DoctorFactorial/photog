@@ -33,8 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         else
         {
-            // TODO: Present UI for loggin in or creating an account
-            println("we have a user!")
+            var tabBarController = TabBarController()
+            navigationController.viewControllers = [startViewController, tabBarController]
         }
         
         var viewController = UIViewController()
