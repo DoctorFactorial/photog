@@ -7,9 +7,18 @@
 //
 
 import UIKit
+import Parse
+
+enum AuthMode
+{
+    case SignIn
+    case SignUp
+}
 
 class AuthViewController: UIViewController, UITextFieldDelegate {
 
+    var authMode: AuthMode = AuthMode.SignUp
+    
     @IBOutlet var emailTextField: UITextField?
     @IBOutlet var passwordTextField: UITextField?
     
@@ -82,13 +91,57 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         if (email?.isEmpty == true || password?.isEmpty == true  || email?.isEmailAddress() == false)
         {
             self.showAlert("Please check your email address and password")
-            
-            println("no good!")
+
             return
         }
-            // otherwise, authenticate
+        
+        if authMode == .SignIn
+        {
+            self.signIn(email!, password: password!)
+        }
+        else
+        {
+            self.signUp(email!, password: password!)
+        }
     }
 
+    func signIn(email: String, password: String)
+    {
+        PFUser.logInWithUsernameInBackground(email, password: password) {
+            (user: PFUser? , error: NSError?) -> Void in
+            
+            if (user != nil)
+            {
+                println("sign in success!")
+            }
+            else
+            {
+                println("sign in failure. (alert the user)")
+            }
+        }
+    }
+    
+    func signUp(email: String, password: String)
+    {
+        var user = PFUser()
+        user.username = email
+        user.email = email
+        user.password = password
+        
+        user.signUpInBackgroundWithBlock{
+            (succeed: Bool, error: NSError?) -> Void in
+            
+            if error == nil
+            {
+                println("sign up success!")
+            }
+            else
+            {
+                println("sign up failure! (alert the user)")
+            }
+        }
+    }
+    
 }
 
 
